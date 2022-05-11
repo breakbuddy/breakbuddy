@@ -7,9 +7,6 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-const homeRouter = require('./routes/home');
-app.use('/home', homeRouter);
-
 const gameRouter = require('./routes/game');
 app.use('/game', gameRouter);
 
