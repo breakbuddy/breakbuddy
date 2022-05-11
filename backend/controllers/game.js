@@ -1,17 +1,13 @@
-module.exports.result = function (req, res) {
-    res.send('Turkey!');
-}
-
-module.exports.test = async function(req, res, next) {
-    res.status(200).json("Hello World 123");
-}
-
 module.exports.answer = async function(req, res, next) {
     try{
         const status = 200;
-        const answers = req.body.answers;
-        let result = JSON.parse(answers[0]);
+        const answerOne = req.body.answerOne;
+        const answerTwo = req.body.answerTwo;
+        const answerThree = req.body.answerThree;
+        const answerFour = req.body.answerFour;
+        const answerFive = req.body.answerFive;
 
+        let result = answerOne + " " + answerTwo + " " + answerThree + " " + answerFour + " " + answerFive + "."
         res.status(status).json(result);
     }
     catch(err){
