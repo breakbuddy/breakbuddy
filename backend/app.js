@@ -7,6 +7,9 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+const homeRouter = require('./routes/home');
+app.use('/home', homeRouter);
+
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
