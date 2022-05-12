@@ -134,17 +134,44 @@ function adviceLocation() {
     let answer4 = localStorage.getItem("answer_4");
     let answer5 = localStorage.getItem("answer_5");
 
-    let possibleCountries = countries
-        .filter(country => String(country.climate) === answer1)
-        .filter(country => String(country.continent) === answer2)
-        .filter(country => String(country.geo) === answer3)
-        .filter(country => String(country.mood) === answer4)
-        .filter(country => String(country.tours) === answer5);
+    const myHeaders = new Headers();
 
-    let randomCountry = random_item(possibleCountries);
+    myHeaders.append('Content-Type', 'application/json');
+    myHeaders.append('Accept', 'application/json, text/plain, */*');
+    myHeaders.append('Authorization', "Bearer " + sessionStorage.getItem("token"));
 
-    country_flag.src = setCountryFlag(randomCountry);
-    country_advise_text.innerHTML = randomCountry.name;
+    fetch('http://localhost:3000/game/', {
+        method: 'POST',
+        headers: myHeaders,
+        body: JSON.stringify({answerOne: answer1, answerTwo: answer2, answerThree: answer3, answerFour: answer4, answerFive: answer5})
+    })
+        .then(async (res) => {
+            if (res.status === 200) {
+                country_advise_text.innerHTML = await res.json();
+                return res.json();
+            } else if (res.status === 401) {
+                alert("error");
+            } else {
+                alert("error 123");
+            }
+        })
+        .then((res) => {
+            console.log(res);
+        })
+
+
+
+    // let possibleCountries = countries
+    //     .filter(country => String(country.climate) === answer1)
+    //     .filter(country => String(country.continent) === answer2)
+    //     .filter(country => String(country.geo) === answer3)
+    //     .filter(country => String(country.mood) === answer4)
+    //     .filter(country => String(country.tours) === answer5);
+
+    // let randomCountry = random_item(possibleCountries);
+    //
+    // country_flag.src = setCountryFlag(randomCountry);
+    // country_advise_text.innerHTML = randomCountry.name;
 }
 
 function setCountryFlag(country) {
