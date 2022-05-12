@@ -11,10 +11,6 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
-})
-
-app.get('/image', (req, res) => {
-    res.send("<img src='./flags/austria.png' width='200px' height='200px'>");
 });
 
 const gameRouter = require('./routes/game');

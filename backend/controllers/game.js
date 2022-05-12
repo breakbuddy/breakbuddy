@@ -18,5 +18,5 @@ module.exports.answer = async function(req, res, next) {
 };
 
 module.exports.image = async function(req, res, next) {
-    res.sendfile("../../source/flags/australia.png");
+    res.send("<img src='../flags/austria.png' width='200px' height='200px'>");
 }
