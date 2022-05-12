@@ -116,17 +116,6 @@ function questionCounter(index){
     bottom_ques_counter.innerHTML = questionNumber;
 }
 
-let countries = [];
-initializeEuropeanCountries();
-initializeAsianCountries();
-
-function random_item(items)
-{
-    return items[Math.floor(Math.random()*items.length)];
-}
-
-//test
-
 function adviceLocation() {
     let answer1 = localStorage.getItem("answer_1");
     let answer2 = localStorage.getItem("answer_2");
@@ -150,7 +139,6 @@ function adviceLocation() {
                 let country = await res.json();
                 country_advise_text.innerHTML = country;
                 setCountryFlag(country);
-                //return res.json();
             } else if (res.status === 401) {
                 alert("error");
             } else {
@@ -160,20 +148,6 @@ function adviceLocation() {
         .then((res) => {
             console.log(res);
         })
-
-
-
-    // let possibleCountries = countries
-    //     .filter(country => String(country.climate) === answer1)
-    //     .filter(country => String(country.continent) === answer2)
-    //     .filter(country => String(country.geo) === answer3)
-    //     .filter(country => String(country.mood) === answer4)
-    //     .filter(country => String(country.tours) === answer5);
-
-    // let randomCountry = random_item(possibleCountries);
-    //
-    // country_flag.src = setCountryFlag(randomCountry);
-    // country_advise_text.innerHTML = randomCountry.name;
 }
 
 function setCountryFlag(country) {
