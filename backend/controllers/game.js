@@ -16,3 +16,7 @@ module.exports.answer = async function(req, res, next) {
         next(err);
     }
 };
+
+module.exports.image = async function(req, res, next) {
+    res.sendfile("../../source/flags/australia.png");
+}
