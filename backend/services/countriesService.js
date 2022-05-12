@@ -45,7 +45,7 @@ module.exports.initializeEuropeanCountries = function(countries) {
         {name: "San Marino", climate: "Warm", continent: "Europe", geo: "City", mood: "Relax", tours: "Food"},
         {name: "Monaco", climate: "Warm", continent: "Europe", geo: "City", mood: "Relax", tours: "Food"},
         {name: "Vatican City", climate: "Warm", continent: "Europe", geo: "City", mood: "Relax", tours: "Museum"},
-        {name: "Cyprus", climate: "Warm", continent: "Europe", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Cyprus", climate: "Warm", continent: "Asia", geo: "Nature", mood: "Experience", tours: "Food"},
     );
 }
 

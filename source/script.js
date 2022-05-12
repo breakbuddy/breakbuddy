@@ -123,15 +123,12 @@ function adviceLocation() {
     let answer4 = localStorage.getItem("answer_4");
     let answer5 = localStorage.getItem("answer_5");
 
-    const myHeaders = new Headers();
-
-    myHeaders.append('Content-Type', 'application/json');
-    myHeaders.append('Accept', 'application/json, text/plain, */*');
-    myHeaders.append('Authorization', "Bearer " + sessionStorage.getItem("token"));
-
     fetch('http://localhost:3000/game/', {
         method: 'POST',
-        headers: myHeaders,
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json, text/plain, */*'
+        },
         body: JSON.stringify({answerOne: answer1, answerTwo: answer2, answerThree: answer3, answerFour: answer4, answerFive: answer5})
     })
         .then(async (res) => {
@@ -139,14 +136,9 @@ function adviceLocation() {
                 let country = await res.json();
                 country_advise_text.innerHTML = country;
                 setCountryFlag(country);
-            } else if (res.status === 401) {
-                alert("error");
             } else {
-                alert("error 123");
+                alert("Error");
             }
-        })
-        .then((res) => {
-            console.log(res);
         })
 }
 
@@ -159,9 +151,7 @@ function setCountryFlag(country) {
             'Content-Type': 'image/png',
             'Content-Transfer-Encoding': 'base64',
             'Accept': 'application/json, text/plain, image/png',
-            'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Encoding',
-            'Content-Encoding': ',\\s*',
-            'Transfer-Encoding': ',\\s*'
+            'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Encoding'
         },
     })
         .then(res => res.blob())
