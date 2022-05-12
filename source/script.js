@@ -148,7 +148,8 @@ function adviceLocation() {
         .then(async (res) => {
             if (res.status === 200) {
                 country_advise_text.innerHTML = await res.json();
-                return res.json();
+                setCountryFlag();
+                //return res.json();
             } else if (res.status === 401) {
                 alert("error");
             } else {
@@ -174,9 +175,20 @@ function adviceLocation() {
     // country_advise_text.innerHTML = randomCountry.name;
 }
 
-function setCountryFlag(country) {
-    let prefix = "./flags/"
-    let name = country.name.toLowerCase();
-    let extension = ".png";
-    return prefix + name + extension;
+function setCountryFlag() {
+    fetch( 'http://localhost:3000/game/belgium', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'image/png',
+            'Content-Transfer-Encoding': 'base64',
+            'Accept': 'application/json, text/plain, image/png',
+            'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Encoding',
+            'Content-Encoding': ',\\s*',
+            'Transfer-Encoding': ',\\s*'
+        },
+    })
+        .then(res => res.blob())
+        .then(blob => {
+            country_flag.src = window.URL.createObjectURL(blob);
+        })
 }
