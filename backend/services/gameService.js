@@ -1,4 +1,22 @@
 let countries = [];
+initializeEuropeanCountries();
+
+function random_item(items)
+{
+    return items[Math.floor(Math.random()*items.length)];
+}
+
+module.exports.adviceCountry = function(answerOne, answerTwo, answerThree, answerFour, answerFive) {
+    let possibleCountries = countries
+        .filter(country => String(country.climate) === answerOne)
+        .filter(country => String(country.continent) === answerTwo)
+        .filter(country => String(country.geo) === answerThree)
+        .filter(country => String(country.mood) === answerFour)
+        .filter(country => String(country.tours) === answerFive);
+
+    let randomCountry = random_item(possibleCountries);
+    return randomCountry;
+}
 
 function initializeEuropeanCountries() {
     countries.push(
@@ -50,23 +68,3 @@ function initializeEuropeanCountries() {
         {name: "Cyprus", climate: "Warm", continent: "Europe", geo: "Nature", mood: "Experience", tours: "Food"},
     );
 }
-
-initializeEuropeanCountries();
-
-function random_item(items)
-{
-    return items[Math.floor(Math.random()*items.length)];
-}
-
-module.exports.adviceCountry = function(answerOne, answerTwo, answerThree, answerFour, answerFive) {
-    let possibleCountries = countries
-        .filter(country => String(country.climate) === answerOne)
-        .filter(country => String(country.continent) === answerTwo)
-        .filter(country => String(country.geo) === answerThree)
-        .filter(country => String(country.mood) === answerFour)
-        .filter(country => String(country.tours) === answerFive);
-
-    let randomCountry = random_item(possibleCountries);
-    return randomCountry;
-}
-
