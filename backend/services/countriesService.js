@@ -48,3 +48,24 @@ module.exports.initializeEuropeanCountries = function(countries) {
         {name: "Cyprus", climate: "Warm", continent: "Europe", geo: "Nature", mood: "Experience", tours: "Food"},
     );
 }
+
+module.exports.initializeAsianCountries = function(countries) {
+    countries.push(
+        {name: "China", climate: "Warm", continent: "Asia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "India", climate: "Warm", continent: "Eurasia", geo: "City", mood: "Experience", tours: "Food"},
+        {name: "Kazakhstan", climate: "Cold", continent: "Eurasia", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Saudi Arabia", climate: "Warm", continent: "Eurasia", geo: "City", mood: "Relax", tours: "Food"},
+        {name: "Iran", climate: "Warm", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Mongolia", climate: "Cold", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Indonesia", climate: "Warm", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Pakistan", climate: "Warm", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Myanmar", climate: "Warm", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Afghanistan", climate: "Warm", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Yemen", climate: "Warm", continent: "Eurasia", geo: "City", mood: "Experience", tours: "Food"},
+        {name: "Thailand", climate: "Warm", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Turkmenistan", climate: "Cold", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Uzbekistan", climate: "Cold", continent: "Eurasia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Iraq", climate: "Warm", continent: "Eurasia", geo: "City", mood: "Experience", tours: "Food"},
+        {name: "Japan", climate: "Cold", continent: "Asia", geo: "Nature", mood: "Experience", tours: "Food"}
+    );
+}
