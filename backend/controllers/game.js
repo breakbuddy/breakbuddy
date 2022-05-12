@@ -1,4 +1,5 @@
 const gameService = require("../services/gameService");
+const path = require("path");
 
 module.exports.answer = async function(req, res, next) {
     try{
@@ -17,8 +18,15 @@ module.exports.answer = async function(req, res, next) {
     }
 };
 
+function setCountryFlag(country) {
+    let name = country.toLowerCase();
+    let extension = ".png";
+    return name + extension;
+}
+
 module.exports.country = async function(req, res, next) {
     let country = req.params.country;
-    res.send(country);
-    //res.send("<img src='../flags/austria.png' width='200px' height='200px'>");
+    let source = setCountryFlag(country);
+
+    res.sendFile(source, { root: 'public\\flags' });
 }
