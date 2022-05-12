@@ -1,5 +1,10 @@
 const gameService = require("../services/gameService");
-const path = require("path");
+
+function setCountryFlag(country) {
+    let name = country.toLowerCase();
+    let extension = ".png";
+    return name + extension;
+}
 
 module.exports.answer = async function(req, res, next) {
     try{
@@ -18,15 +23,14 @@ module.exports.answer = async function(req, res, next) {
     }
 };
 
-function setCountryFlag(country) {
-    let name = country.toLowerCase();
-    let extension = ".png";
-    return name + extension;
-}
-
 module.exports.country = async function(req, res, next) {
-    let country = req.params.country;
-    let source = setCountryFlag(country);
+    try {
+        let country = req.params.country;
+        let image = setCountryFlag(country);
 
-    res.sendFile(source, { root: 'public\\flags' });
+        res.sendFile(image, { root: 'public\\flags' });
+    }
+    catch (err) {
+        next(err);
+    }
 }
