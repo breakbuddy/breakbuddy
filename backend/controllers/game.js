@@ -17,6 +17,8 @@ module.exports.answer = async function(req, res, next) {
     }
 };
 
-module.exports.image = async function(req, res, next) {
-    res.send("<img src='../flags/austria.png' width='200px' height='200px'>");
+module.exports.country = async function(req, res, next) {
+    let country = req.params.country;
+    res.send(country);
+    //res.send("<img src='../flags/austria.png' width='200px' height='200px'>");
 }

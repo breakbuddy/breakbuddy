@@ -5,6 +5,6 @@ const gameController = require('../controllers/game')
 
 router.post('/', gameController.answer);
 
-router.get('/image', gameController.image);
+router.get('/:country', gameController.country);
 
 module.exports = router;
