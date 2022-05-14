@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BreakBuddy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/900ea1237f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="start_btn">
+		<div class="wrapper">
+			<div class="bird">
+				<div class="hair-container">
+					<div class="hair"></div>
+				</div>
+				<div class="face">
+					<div class="white-container">
+						<div class="white"></div>
+					</div>
+					<div class="shadow-container">
+						<div class="shadow"></div>
+					</div>
+					<div class="bigBeak-container">
+						<div class="bigBeak"></div>
+					</div>
+					<div class="smallBeak-container">
+						<div class="smallBeak"></div>
+					</div>
+					<div class="eye"></div>
+				</div>
+			</div>
+			<div class="home-text-section">
+				<h1 id="home-text-title">Hey!</h1>
+				<p id="home-text">My name is BreakBuddy, your best friend in finding your next holiday destination.
+					I'll simply ask you a few questions and recommend the best possible destination for you. Ready to play?</p>
+				<button id="home-text-start-button">Let's start</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="info_box">
+		<div class="info-title"><span>Some Basic Rules</span></div>
+		<div class="info-list">
+			<div class="info">1. You will be asked to answer <span>5 questions</span>.</div>
+			<div class="info">2. Once you select a choice, it <span>can't</span> be undone.</div>
+			<div class="info">3. You <span>can't exit</span> while you're playing.</div>
+			<div class="info">4. BreakBuddy will suggest a <span>destination</span> once you finish.</div>
+			<div class="info">5. There is no time limit, so no need to hurry.</div>
+		</div>
+		<div class="buttons">
+			<button class="quit">Exit</button>
+			<button class="restart">Continue</button>
+		</div>
+	</div>
+
+	<div class="quiz_box">
+		<section>
+			<div class="que_text"></div>
+			<div class="option_list"></div>
+		</section>
+		<footer>
+			<div class="total_que"></div>
+			<button class="next_btn">Next</button>
+		</footer>
+	</div>
+
+	<div class="result_box">
+		<div class="icon">
+<!--			<i class="fa-solid fa-umbrella-beach"></i>-->
+			<img id="country-flag" height="150px" width="150px">
+		</div>
+		<div class="complete_text">You should visit:</div>
+		<div class="complete_text" id="country-advise-text"></div>
+		<div class="buttons">
+			<button class="restart">Replay Quiz</button>
+			<button class="quit">Quit Quiz</button>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>Designed By Hursit Tarcan.</p>
+	</div>
+	<script src="questions.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
