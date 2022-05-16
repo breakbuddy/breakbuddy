@@ -43,7 +43,7 @@ If you've already forked the repo, you'll want to ensure your fork is configured
 To [configure your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork):
 
 ```sh
-$ git remote add upstream https://github.com/HursitTarcan/BreakBuddy
+$ git remote add upstream https://github.com/BreakBuddy/BreakBuddy
 ```
 
 To [sync your fork with the latest changes](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
