@@ -45,7 +45,7 @@ module.exports.initializeEuropeanCountries = function(countries) {
         {name: "San Marino", climate: "Warm", continent: "Europe", geo: "City", mood: "Relax", tours: "Food"},
         {name: "Monaco", climate: "Warm", continent: "Europe", geo: "City", mood: "Relax", tours: "Food"},
         {name: "Vatican City", climate: "Warm", continent: "Europe", geo: "City", mood: "Relax", tours: "Museum"},
-        {name: "Cyprus", climate: "Warm", continent: "Asia", geo: "Nature", mood: "Experience", tours: "Food"},
+        {name: "Cyprus", climate: "Warm", continent: "Asia", geo: "Nature", mood: "Experience", tours: "Food"}
     );
 }
 
@@ -98,5 +98,62 @@ module.exports.initializeAsianCountries = function(countries) {
         {name: "Brunei", climate: "Warm", continent: "Asia", geo: "Nature", mood: "Relax", tours: "Food"},
         {name: "Taiwan", climate: "Warm", continent: "Asia", geo: "Nature", mood: "Experience", tours: "Food"},
         {name: "Hong Kong", climate: "Warm", continent: "Asia", geo: "City", mood: "Experience", tours: "Museum"}
+    );
+}
+
+module.exports.initializeAfricanCountries = function(countries) {
+    countries.push(
+        {name: "Nigeria", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Ethiopia", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Egypt", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Congo", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Tanzania", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "South Africa", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Kenya", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Uganda", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Algeria", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Sudan", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Morocco", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Angola", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Mozambique", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Ghana", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Madagascar", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Cameroon", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Côte d'Ivore", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Niger", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Burkina Faso", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Mali", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Malawi", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Zambia", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Senegal", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Chad", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Somalia", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Zimbabwe", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Guinea", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Rwanda", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Benin", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Burundi", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Tunisia", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "South Sudan", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Togo", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Sierra Leone", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Libya", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Liberia", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Central African Republic", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Mauritania", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Eritrea", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Namibia", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Gambia", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Botswana", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Gabon", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Lesotho", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Guinea-Bissau", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Equatorial Guinea", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Mauritius", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Eswatini", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Djibouti", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Comoros", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Cabo Verde", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"},
+        {name: "Seychelles", climate: "Warm", continent: "Africa", geo: "Nature", mood: "Relax", tours: "Food"}
     );
 }
