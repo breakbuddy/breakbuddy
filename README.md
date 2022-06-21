@@ -1,6 +1,6 @@
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
   <a href="https://ethereum.org"><img alt="BreakBuddy logo" src="./docs/logo.png" alt="ethereum.org" width="200"></a>
-  <h1>Welcome to BreakBuddy!</h1>
+  <h1>Welcome to the BreakBuddy API!</h1>
 </div>
 
 This is the repo for the [breakbuddy](https://api.breakbuddy.be) API. BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy :bird: will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source :heart:.
@@ -21,15 +21,13 @@ This is the repo for the [breakbuddy](https://api.breakbuddy.be) API. BreakBuddy
 
 ## Our REST API
 
-This project follows the [all-contributors](https://allcontributors.org/docs/en/overview) specification. Contributions of any kind are welcome! :heart:
+BreakBuddy is running on a Node.js back-end. All our source files are present in this repository (./src). Our API has three endpoints at the moment. 
 
-This part of the readme.md is dedicated to code contributions 💻.
-
-### 1. Submit an issue
-
-- Create a [new issue](https://github.com/HUrsitTarcan/BreakBuddy/issues/new/choose).
-- Comment on the issue (if you'd like to be assigned to it) - that way our team can assign the issue to you.
-- TEST TEST TEST 
+### 1. Endpoints 
+Those are the three endpoints that our Node.js API provides: 
+* GET '/': Our homepage will return "Hello World". 
+* POST '/game': Post request that sends a JSON body with the user-given answers, the API will respond with a corresponding country. 
+* GET '/game/:country': Will return a PNG image with the given country name. 
 
 ## How to contribute as a developer
 
