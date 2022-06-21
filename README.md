@@ -3,7 +3,7 @@
   <h1>Welcome to BreakBuddy!</h1>
 </div>
 
-This is the repo for the [breakbuddy](https://breakbuddy.be) website. BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy :bird: will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source :heart:.
+This is the repo for the [breakbuddy](https://api.breakbuddy.be) API. BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy :bird: will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source :heart:.
 
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
   Copyright Ⓒ 2022 - Hursit Tarcan ®
