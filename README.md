@@ -3,7 +3,7 @@
   <h1>Welcome to BreakBuddy!</h1>
 </div>
 
-This is the repo for the [breakbuddy](https://api.breakbuddy.be) API. BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy :bird: will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source :heart:.
+This is the repo for the [breakbuddy](https://breakbuddy.be) website. BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy :bird: will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source :heart:.
 
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
   Copyright Ⓒ 2022 - Hursit Tarcan ®
@@ -13,10 +13,23 @@ This is the repo for the [breakbuddy](https://api.breakbuddy.be) API. BreakBuddy
 
 ## Table of contents
 
+- [Our REST API](#Our-REST-API) :computer:
 - [How to contribute as a developer](#how-to-contribute-as-a-developer) :computer:
 - [How to contribute as a translator](#how-to-contribute-as-a-translator) :pencil:
 - [How to contribute to content](#how-to-contribute-to-content) :bulb:
 - [Give us feedback](#Give-us-feedback) :question:
+
+## Our REST API
+
+This project follows the [all-contributors](https://allcontributors.org/docs/en/overview) specification. Contributions of any kind are welcome! :heart:
+
+This part of the readme.md is dedicated to code contributions 💻.
+
+### 1. Submit an issue
+
+- Create a [new issue](https://github.com/HUrsitTarcan/BreakBuddy/issues/new/choose).
+- Comment on the issue (if you'd like to be assigned to it) - that way our team can assign the issue to you.
+- TEST TEST TEST 
 
 ## How to contribute as a developer
 
