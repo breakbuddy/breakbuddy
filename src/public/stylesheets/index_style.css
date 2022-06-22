@@ -1,0 +1,76 @@
+body {
+    color:black;
+    background: grey;
+    padding: 20px;
+    justify-content: center;
+    text-align: left;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+label {
+    color: black;
+    size: 50px;
+}
+
+li {
+    color: red;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+h3{
+    color: deepskyblue;
+}
+
+input {
+    border-style: groove;
+    margin-left: 10px;
+}
+
+input:hover {
+    background: grey;
+    cursor: grab;
+}
+
+#submitButton {
+    border-radius: 20px;
+    size: 20px;
+    font-size: 12px;
+    margin-left: 0;
+    width: 100px;
+    height: 25px;
+    background: lightgreen;
+    cursor: grab;
+}
+
+#submitButton:hover {
+    background: green;
+}
+
+#extra {
+    color: lightgreen;
+}
+
+.score {
+    color: black;
+    text-decoration: underline;
+}
+
+button {
+    border-radius: 15px;
+    size: 20px;
+    font-size: 15px;
+    margin-left: 0;
+    background: lightgreen;
+    cursor: grab;
+}
+
+button:hover {
+    background: green;
+}
+.regels {
+    color: black;
+}

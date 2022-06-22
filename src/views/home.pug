@@ -1,0 +1,16 @@
+extends base
+
+block header_injection
+    title BreakBuddy.be
+
+block contents
+    h1 Welcome to BreakBuddy's API Page!
+    p BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy 🐦 will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source ❤️.
+    br
+    br
+    h2 API DOCS
+    p BreakBuddy's backend is running on Node.js. We use three endpoints at the moment.
+    ul
+        li GET /, this returns the page that you are on right now :)
+        li POST /game, this endpoint accepts a JSON body and responds with a corresponding country.
+        li GET /game/:country, this endpoint returns a PNG image with the given country name.
