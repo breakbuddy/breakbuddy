@@ -4,13 +4,21 @@ block header_injection
     title BreakBuddy.be
 
 block contents
-    h1 Welcome to BreakBuddy's API Page!
-    p BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy 🐦 will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source ❤️.
-    br
-    br
-    h2 API DOCS
-    p BreakBuddy's backend is running on Node.js. We use three endpoints at the moment.
+    h1(class="title") WELCOME TO BREAKBUDDY!
+    p(class="description") BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy 🐦 will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source ❤️.
+
+    h1 API DOCS
+    p(class="description") BreakBuddy's backend is running on Node.js. We use three endpoints at the moment.
     ul
-        li GET /, this returns the page that you are on right now :)
-        li POST /game, this endpoint accepts a JSON body and responds with a corresponding country.
-        li GET /game/:country, this endpoint returns a PNG image with the given country name.
+        li GET /
+            p(class="bulletdescription") This returns the page that you are on right now :)
+            p(class="example") https://api.breakbuddy.be/
+        br
+        li POST /game
+            p(class="bulletdescription") This endpoint accepts a JSON body and responds with a corresponding country.
+            p(class="example") https://api.breakbuddy.be/game/
+        br
+        li GET /game/:country
+            p(class="bulletdescription") This endpoint returns a PNG image with the given country name.
+            p(class="example") https://api.breakbuddy.be/game/turkey/
+    p(class="footer") Copyright Ⓒ 2022 - Hursit Tarcan ®

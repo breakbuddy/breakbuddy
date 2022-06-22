@@ -1,76 +1,60 @@
-body {
-    color:black;
-    background: grey;
-    padding: 20px;
-    justify-content: center;
-    text-align: left;
-    border-style: solid;
-    border-radius: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-label {
-    color: black;
-    size: 50px;
-}
-
-li {
-    color: red;
+body{
+    overflow: hidden;
+    background: #18233e;
+    color: wheat;
+    width: 100%;
 }
 
 h1 {
-    text-decoration: underline;
+    text-align: center;
+    margin-top: 40px;
+    color: #f7a500;
 }
 
-h3{
-    color: deepskyblue;
+h2 {
+    text-align: center;
+    margin-top: 40px;
 }
 
-input {
-    border-style: groove;
-    margin-left: 10px;
+.description {
+    display: block;
+    text-align: center;
+    margin: 20px 150px;
 }
 
-input:hover {
-    background: grey;
-    cursor: grab;
+li {
+    color: #007bff;
+    text-align: center;
 }
 
-#submitButton {
-    border-radius: 20px;
-    size: 20px;
-    font-size: 12px;
-    margin-left: 0;
-    width: 100px;
-    height: 25px;
-    background: lightgreen;
-    cursor: grab;
+.bulletdescription {
+    color: wheat;
 }
 
-#submitButton:hover {
-    background: green;
+.example {
+    color: #23903c;
 }
 
-#extra {
-    color: lightgreen;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 25px;
+    width: 100%;
+    color: #f7a500;
+    text-align: center;
 }
 
-.score {
-    color: black;
-    text-decoration: underline;
-}
-
-button {
-    border-radius: 15px;
-    size: 20px;
-    font-size: 15px;
-    margin-left: 0;
-    background: lightgreen;
-    cursor: grab;
-}
-
-button:hover {
-    background: green;
-}
-.regels {
-    color: black;
+h1.title {
+  font-size: 40px;
+    text-transform: capitalize;
 }
