@@ -3,7 +3,7 @@
   <h1>Welcome to BreakBuddy!</h1>
 </div>
 
-This is the repo for the [breakbuddy](https://breakbuddy.herokuapp.com/) API. BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy :bird: will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source :heart:.
+This is the repo for the [BreakBuddy](https://breakbuddy.herokuapp.com/) API. BreakBuddy is an initiative to help users choose their next holiday destination in an easy and enjoyable way. Our website provides a fun and easy-to-use interface for users all around to world. Our buddy :bird: will simply ask users a few questions and then recommend the best possible holiday destination that we have in our database. BreakBuddy is a non-profit organisation and our code is completely open-source :heart:.
 
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
   Copyright Ⓒ 2022 - Hursit Tarcan ®
@@ -55,14 +55,14 @@ This part of the readme.md is dedicated to code contributions 💻.
 If this is your first time forking our repo, this is all you need to do for this step:
 
 ```sh
-$ git clone git@github.com:[your_github_profile]/BreakBuddy.git
+$ git clone git@github.com:[your_github_profile]/breakbuddy.git
 ```
 If you've already forked the repo, you'll want to ensure your fork is configured and that it's up to date. This will save you the headache of potential merge conflicts.
 
 To [configure your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork):
 
 ```sh
-$ git remote add upstream https://github.com/BreakBuddy/BreakBuddy
+$ git remote add upstream https://github.com/breakbuddy/breakbuddy
 ```
 
 To [sync your fork with the latest changes](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
@@ -89,7 +89,7 @@ $ Add features, fix bugs, etc...
 3. Commit and prepare for pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)).
 
 ```sh
-$ git commit -m "brief description of changes [Fixes #1234]"
+$ git commit -m "brief description of changes [fixes #1234]"
 ```
 
 4. Push to your GitHub account
@@ -100,9 +100,9 @@ $ git push origin
 
 ### 4. Submit your PR
 
-- After your changes are committed to your GitHub fork, submit a pull request (PR) to the `main` branch of the `HursitTarcan/BreakBuddy` repo
+- After your changes are committed to your GitHub fork, submit a pull request (PR) to the `main` branch of the `breakbuddy/breakbuddy` repo
 - In your PR description, reference the issue it resolves (see [linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword))
-  - ex. `Updates out of date content [Fixes #1234]`
+  - ex. `updates out of date content [fixes #1234]`
 - _Confirm your preview deploy looks & functions as expected_
 
 ### 5. Wait for a review
@@ -122,7 +122,7 @@ This part of the readme.md is dedicated to translation contributions :pencil:.
 
 ### 1. Submit an issue
 
-- Create a [new issue](https://github.com/HUrsitTarcan/BreakBuddy/issues/new/choose), specify the language that you would like to add.
+- Create a [new issue](https://github.com/breakbuddy/breakbuddy/issues/new/choose), specify the language that you would like to add.
 - Anyone can create a new issue (code contributions are not needed for this). 
 - Comment on the issue (if you'd like to be assigned to it) - that way our team can assign the issue to you.
 - You will be asked to upload a txt file with your translation, this can be done via Discord. 
@@ -143,7 +143,7 @@ This part of the readme.md is dedicated to content contributions 💡.
 
 ### 1. Submit an issue
 
-- Create a [new issue](https://github.com/HUrsitTarcan/BreakBuddy/issues/new/choose).
+- Create a [new issue](https://github.com/breakbuddy/breakbuddy/issues/new/choose).
 - Anyone can create a new issue (code contributions are not needed for this). 
 - Specify the new feature you would like to add, (design proposal, content change, add new destinations, etc...) 
 - Comment on the issue (if you'd like to be assigned to it) - that way our team can assign the issue to you.
@@ -164,7 +164,7 @@ This part of the readme.md is dedicated to feedback contributions ❓.
 
 ### 1. Submit an issue or send us a DM via Discord
 
-- Create a [new issue](https://github.com/HUrsitTarcan/BreakBuddy/issues/new/choose), specify your feedback.
+- Create a [new issue](https://github.com/breakbuddy/breakbuddy/issues/new/choose), specify your feedback.
 - Anyone can create a new issue (code contributions are not needed for this). 
 - Our team will contact you via the issue. 
 
