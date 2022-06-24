@@ -172,7 +172,7 @@ This part of the readme.md is dedicated to feedback contributions ❓.
 
 - Feedback is greatly appreciated. 
 - Acceptable changes will be approved & merged into the main branch. 
-- Thank you for your feedback :heart:.
+- Thank you for your feedback. :heart:
 
 <div align="center" style="margin-top: 1em; margin-bottom: 3em;">
   Copyright Ⓒ 2022 - Hursit Tarcan ®
